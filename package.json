@@ -1,0 +1,39 @@
+{
+  "name": "react-embed-github-file-content",
+  "version": "1.0.0",
+  "description": "React component to embed the content of a file from GitHub.",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterrhodesdev/react-embed-github-file-content.git"
+  },
+  "keywords": [
+    "embed",
+    "github",
+    "react"
+  ],
+  "author": {
+    "name": "Peter Rhodes",
+    "email": "peter@peterrhodes.dev",
+    "url": "https://peterrhodes.dev/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterrhodesdev/react-embed-github-file-content/issues"
+  },
+  "homepage": "https://github.com/peterrhodesdev/react-embed-github-file-content#readme",
+  "dependencies": {
+    "react": "^18.1.0"
+  },
+  "devDependencies": {
+    "nwb": "^0.25.2"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0"
+  }
+}
