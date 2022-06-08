@@ -6,6 +6,11 @@ function convertGitHubUrlToRaw(url) {
   return rawFileUrl;
 }
 
+function getFileExtension(url) {
+  const filename = url.split("/").pop();
+  return filename.slice((Math.max(0, filename.lastIndexOf(".")) || Infinity) + 1);
+}
+
 const EmbedGitHubFileContent = ({
   url,
   loadingComponent,
@@ -65,7 +70,7 @@ const EmbedGitHubFileContent = ({
 
   return (
     <pre>
-      <code>{gitHubFileContent}</code>
+      <code className={`language-${getFileExtension(url)}`}>{gitHubFileContent}</code>
     </pre>
   );
 }
